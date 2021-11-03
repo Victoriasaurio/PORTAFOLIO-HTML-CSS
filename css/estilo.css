@@ -1,0 +1,99 @@
+.contenedor {
+    max-width: 1200px;
+    margin: auto;
+}
+.estilo-titulo {
+    border: 1px solid red;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.estilo-titulo h3 {
+    font-family: var(--MontserratLight);
+    font-size: 12.5px;
+    text-transform: uppercase;
+    color: var(--TypeFuchsia);
+}
+.estilo-titulo h1 {
+    font-family: var(--MontserratExtraLight);
+    font-size: x-large;
+    margin: 10px 0;
+}
+.estilo-titulo h1 strong {
+    font-family: var(--MontserratRegular);
+    font-size: x-large;
+}
+.estilo-titulo div {
+    border: 1px solid var(--TypeFuchsia);
+    width: 50px;
+}
+
+.img-portfolio {
+    border: 1px solid greenyellow;
+    max-width: 1100px;
+}
+.img-portfolio article {
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.img-portfolio article figure {
+    border: 1px solid yellow;
+    max-width: 710px;
+    max-height: 345px;
+    
+}
+.img-portfolio article figure img {
+    width: 100%;
+    height: 100%;
+}
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.photo-3:hover .banner {
+    top: 0%;
+}
+.banner {
+    background-color: var(--Transparencia);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.banner h2 {
+    font-family: var(--MontserratRegular);
+    font-size: large;
+}
+.banner h4 {
+    font-family: var(--MontserratExtraLight);
+    margin: 7px 0;
+}
+.circulo {
+    background-color: var(--TypeFuchsia);
+    border-radius: 50%;
+    padding: 2%;
+}
+.circulo i {
+    color: white;
+}
+.photo-3 {
+    border: 1px solid blue;
+    background-image: url('../img/foto3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 345px;
+    height: 345px;
+    position: relative;
+    overflow: hidden;
+}

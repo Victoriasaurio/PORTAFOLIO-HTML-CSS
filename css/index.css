@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+@font-face {
+    font-family: "montserrat-extraLight";
+    src: url('./font/Montserrat/Montserrat-ExtraLight.ttf');
+}
+@font-face {
+    font-family: "montserrat-light";
+    src: url('./font/Montserrat/Montserrat-Light.ttf');
+}
+@font-face {
+    font-family: "montserrat-regular";
+    src: url('./font/Montserrat/Montserrat-Regular.ttf');
+}
+:root {
+    --MontserratExtraLight: "montserrat-extraLight";
+    --MontserratLight: "montserrat-light";
+    --MontserratRegular: "montserrat-regular";
+    --TypeFuchsia: rgb(255, 0, 128);
+    --Transparencia: rgba(255, 255, 255, .5);
+}
