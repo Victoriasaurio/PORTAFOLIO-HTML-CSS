@@ -17,10 +17,17 @@
     font-family: "montserrat-regular";
     src: url('./font/Montserrat/Montserrat-Regular.ttf');
 }
+@font-face {
+    font-family: "montserrat-bold";
+    src: url('./font/Montserrat/Montserrat-Bold.ttf');
+}
 :root {
     --MontserratExtraLight: "montserrat-extraLight";
     --MontserratLight: "montserrat-light";
     --MontserratRegular: "montserrat-regular";
+    --MontserratBold: "montserrat-bold";
     --TypeFuchsia: rgb(255, 0, 128);
-    --Transparencia: rgba(255, 255, 255, .5);
+    --Transparencia: rgba(255, 255, 255, .8);
+    --LineaGrey: rgb(220, 220, 220);
+    --backgroundGrey: rgb(232, 231, 231);
 }
