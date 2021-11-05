@@ -4,7 +4,6 @@
     margin: auto;
 }
 .estilo-titulo {
-    border: 1px solid red;
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -188,6 +187,16 @@
     color: grey;
     margin: 0 5px;
 }
+.linea-gray-card {
+    border: 0.5px solid var(--LineaGrey);
+    margin: 30px 0;
+    padding: 0 120px;
+}
+.icono {
+    color: #ccc;
+    margin-bottom: 10px;
+    padding-top: 25px;
+}
 
 /* Precios */
 .bigConteiner {
@@ -195,23 +204,25 @@
     background: var(--backgroundGrey);
 }
 .card-price {
-    border: 1px solid turquoise;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 .card-price article {
-    border: 1px solid fuchsia;
-    width: 300px;
-    height: 450px;
+    margin: 25px 0;
+    width: 325px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
     background: white;
+    transition: all 0.5s;
 }
-.card-price article i {
-    
+.card-price article:hover {
+    box-shadow: 0px 0px 10px #ccc;
+    transform: scale(1.05);
 }
 .card-price article h2 {
     font-family: var(--MontserratExtraLight);
@@ -231,9 +242,9 @@
     margin-left: 2px;
     margin-right: 2px;
 }
-.price h3 {
+.price .rosa {
     font-family: var(--MontserratRegular);
-    font-size: x-small;
+    font-size: small;
     margin-top: 20px;
     color: var(--TypeFuchsia);
 }
@@ -241,6 +252,7 @@
     font-family: var(--MontserratExtraLight);
     font-size: small;
     margin: 10px 0;
+    color: gray;
 }
 .card-price article a {
     border: 1px solid black;
@@ -252,5 +264,67 @@
     font-family: var(--MontserratRegular);
     font-size: small;
     color: black;
-    
+    transition: all 0.5s;
+}
+.card-price article a:hover {
+    border: 1px solid var(--TypeFuchsia);
+    background-color: var(--TypeFuchsia);
+    color: #ccc;
+}
+
+/* Card info */
+.card-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.card-info article {
+    margin-bottom: 100px;
+    width: 325px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px #ccc;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.card-info article:hover figure {
+    transform: scale(1.2);
+}
+.info {
+    width: 280px;
+    padding: 25px 0;
+}
+.card-info article figure img {
+    width: 100%;
+}
+.card-info article h3 {
+    font-family: var(--MontserratExtraLight);
+    font-size: small;
+}
+.card-info article h1 {
+    margin: 7px 0;
+    font-family: var(--MontserratRegular);
+    font-size: medium;
+}
+.card-info article h6, strong {
+    font-family: var(--MontserratExtraLight);
+    font-size: x-small;
+}
+.card-info article strong, .ross {
+    color: var(--TypeFuchsia);
+}
+.linea-gray-info {
+    border: 0.1px solid var(--LineaGrey);
+    margin: 20px 0;
+    padding: 0 120px;
+}
+.card-info article p, a {
+    margin: 30px 0;
+    font-family: var(--MontserratRegular);
+    font-size: small;
+}
+.more {
+    color: gray;
 }
